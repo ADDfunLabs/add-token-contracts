@@ -1,0 +1,85 @@
+{
+  "chainId": 56,
+  "address": "0xd88768583A93B87D8231F7846965F1F123baf579",
+  "status": "historical",
+  "contractName": "contracts/TokenSale.sol:TokenSale",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "constructorArguments": "",
+  "license": "MIT",
+  "explorer": "https://bscscan.com/address/0xd88768583A93B87D8231F7846965F1F123baf579#code",
+  "checkedAt": "2026-09-16T07:34:56.546Z",
+  "checkedBlock": {
+    "number": 122182463,
+    "hash": "0xcbb730812d09d3c7ec798d7924b65d12e1a7371058057f8cdac8125a9e127630"
+  },
+  "initializationAuthority": "0x2eFe6DCd39A7C0b1cD291d1bf5C2f1Cdd9764a1A",
+  "immutableReferences": {
+    "257": [
+      {
+        "length": 32,
+        "start": 797
+      },
+      {
+        "length": 32,
+        "start": 995
+      },
+      {
+        "length": 32,
+        "start": 2928
+      },
+      {
+        "length": 32,
+        "start": 9221
+      }
+    ]
+  },
+  "immutableValues": {
+    "257": "0x0000000000000000000000002efe6dcd39a7c0b1cd291d1bf5c2f1cdd9764a1a"
+  },
+  "runtimeCodeHash": "0xdef36813e37c7fe8b25d0085d8e99d2e2b3b22691df8d04e50f67bc8d39b4613",
+  "runtimeSha256": "ee2f57a4224dee46c53e02610c724019afc5f0716f0a4c0bf4856c8b64dc111c",
+  "runtimeTemplateSha256": "49292948ec727a6b6e4eff0c28a144f08a8a869a000f99ed0f793cae69de84ca",
+  "creationSha256": "d2266b3161bc321dfe84135c3a01c3665d3dbe8a2f0ec8db110ea0f1831c21ee",
+  "standardInputSha256": "20e1118eead9ad707b6b285672a6826671e7c5e526e0bae458b168d6f1780489",
+  "verification": {
+    "explorerSourceMatch": true,
+    "explorerCodeGenerationSettingsMatch": true,
+    "explorerOutputSelection": {
+      "*": {
+        "*": [
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "devdoc",
+          "userdoc",
+          "metadata",
+          "abi"
+        ]
+      }
+    },
+    "localOutputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode"
+        ]
+      }
+    },
+    "chainRuntimeExactMatch": true,
+    "immutableValuesReadFromChain": true
+  },
+  "sources": [
+    {
+      "path": "contracts/FullMath.sol",
+      "sha256": "a21075cbb9e07a37f5ad442579c7ddf074e95baff9b9829d8423981e34167cb3"
+    },
+    {
+      "path": "contracts/TokenSale.sol",
+      "sha256": "8f926878dddcc11f9411e73e631c49ad73aab66c3336f3adb520e8eae060049d"
+    },
+    {
+      "path": "contracts/openzeppelin/ERC20.sol",
+      "sha256": "9bc335da03998c483d67334868cbf76ef58933c8fa64a007ddfc97d87247e144"
+    }
+  ]
+}

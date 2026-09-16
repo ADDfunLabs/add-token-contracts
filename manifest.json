@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "chainId": 56,
+  "publicationVersion": "1.0.0",
+  "generatedAt": "2026-09-16T07:35:16.828Z",
+  "note": "Read-only source archive; implementation addresses are not user token addresses. Current/historical designation is as of publication.",
+  "contracts": [
+    {
+      "directory": "current/standard",
+      "address": "0x68D18a58e97C20c849d7E5cc8d68bcb3c61a8242",
+      "status": "current",
+      "contractName": "contracts/TokenSale.sol:TokenSale",
+      "runtimeCodeHash": "0x7216d38fc8c5e665b230509eb96451afbb061195a447e29c9e4d88a170ab5a1d"
+    },
+    {
+      "directory": "current/tax",
+      "address": "0xd7308A6a87BB5d4fe7bdC1fA1b150885d8408bDD",
+      "status": "current",
+      "contractName": "contracts/tax/ADDTaxToken.sol:ADDTaxToken",
+      "runtimeCodeHash": "0x84a612fb791f5a94d69a4e33ca7f7ac7b0eaa9163d3851e1a0014bc404e2656a"
+    },
+    {
+      "directory": "historical/standard-eb452c3c",
+      "address": "0xEB452C3cf25cDa5d170F0265801a69263840b92d",
+      "status": "historical",
+      "contractName": "contracts/TokenSale.sol:TokenSale",
+      "runtimeCodeHash": "0x3e941c41fb0d0c789e24781f43a7417e911d241150efbc2bbe38292b794785d4"
+    },
+    {
+      "directory": "historical/standard-d8876858",
+      "address": "0xd88768583A93B87D8231F7846965F1F123baf579",
+      "status": "historical",
+      "contractName": "contracts/TokenSale.sol:TokenSale",
+      "runtimeCodeHash": "0xdef36813e37c7fe8b25d0085d8e99d2e2b3b22691df8d04e50f67bc8d39b4613"
+    },
+    {
+      "directory": "historical/tax-44507482",
+      "address": "0x4450748235A2180B78e82ED6238F918c1ACF9684",
+      "status": "historical",
+      "contractName": "contracts/tax/ADDTaxToken.sol:ADDTaxToken",
+      "runtimeCodeHash": "0x5aac23357d2dfa4d94b31a307c9334caa78ebdb67575af769d071470c7c6a654"
+    }
+  ]
+}

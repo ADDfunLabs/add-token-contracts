@@ -1,0 +1,113 @@
+{
+  "chainId": 56,
+  "address": "0x4450748235A2180B78e82ED6238F918c1ACF9684",
+  "status": "historical",
+  "contractName": "contracts/tax/ADDTaxToken.sol:ADDTaxToken",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "constructorArguments": "",
+  "license": "MIT",
+  "explorer": "https://bscscan.com/address/0x4450748235A2180B78e82ED6238F918c1ACF9684#code",
+  "checkedAt": "2026-09-16T07:35:16.827Z",
+  "checkedBlock": {
+    "number": 122182508,
+    "hash": "0xc6a650693ae990e8d87ffb742317c0fa8b32b9dd17a6602a8b8b884d834494fc"
+  },
+  "initializationAuthority": "0x308d704773F02289d5A55378D3fab23D2d1271f2",
+  "immutableReferences": {
+    "257": [
+      {
+        "length": 32,
+        "start": 928
+      },
+      {
+        "length": 32,
+        "start": 1112
+      },
+      {
+        "length": 32,
+        "start": 3246
+      },
+      {
+        "length": 32,
+        "start": 7385
+      },
+      {
+        "length": 32,
+        "start": 12442
+      },
+      {
+        "length": 32,
+        "start": 13130
+      }
+    ]
+  },
+  "immutableValues": {
+    "257": "0x000000000000000000000000308d704773f02289d5a55378d3fab23d2d1271f2"
+  },
+  "runtimeCodeHash": "0x5aac23357d2dfa4d94b31a307c9334caa78ebdb67575af769d071470c7c6a654",
+  "runtimeSha256": "51110146f2744fddf976fd4a3336007db3bc1d534a8fac48d68f7c502061238c",
+  "runtimeTemplateSha256": "e16a9cfe853995810eddf3a5b3da4ace9ea18d7ae223c4912d52a8c580b27f0e",
+  "creationSha256": "dc6c4df2a510dbb03707cb4608e73da61e055d6d89c2f7126a1f9d37ef96a371",
+  "standardInputSha256": "4f63eea632cefe42efc11d64bc9bcdcddc21f467576e1c71e662662de9342c80",
+  "verification": {
+    "explorerSourceMatch": true,
+    "explorerCodeGenerationSettingsMatch": true,
+    "explorerOutputSelection": {
+      "*": {
+        "*": [
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "devdoc",
+          "userdoc",
+          "metadata",
+          "abi"
+        ]
+      }
+    },
+    "localOutputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode"
+        ]
+      }
+    },
+    "chainRuntimeExactMatch": true,
+    "immutableValuesReadFromChain": true
+  },
+  "sources": [
+    {
+      "path": "contracts/FullMath.sol",
+      "sha256": "a21075cbb9e07a37f5ad442579c7ddf074e95baff9b9829d8423981e34167cb3"
+    },
+    {
+      "path": "contracts/TokenSale.sol",
+      "sha256": "8f926878dddcc11f9411e73e631c49ad73aab66c3336f3adb520e8eae060049d"
+    },
+    {
+      "path": "contracts/openzeppelin/ERC20.sol",
+      "sha256": "9bc335da03998c483d67334868cbf76ef58933c8fa64a007ddfc97d87247e144"
+    },
+    {
+      "path": "contracts/openzeppelin/ReentrancyGuard.sol",
+      "sha256": "6c11f6723d5ba28ce1c1342f22001573cfcaed2f1946b3be1d8d967bb3463ae2"
+    },
+    {
+      "path": "contracts/openzeppelin/SafeERC20.sol",
+      "sha256": "dc8dfe7e3d3cc1ec17954d13698c2ff306ccb409fbbf3551a00afbda0fd09cc7"
+    },
+    {
+      "path": "contracts/tax/ADDTaxDividend.sol",
+      "sha256": "c01b92f66878f7d543528318e6c228739cad4b9f82a964b724bdc83de49fee3b"
+    },
+    {
+      "path": "contracts/tax/ADDTaxToken.sol",
+      "sha256": "c789de2f67158fe511394a4bde229425d32ef6c3f5c89df84cf88b68ac9577dd"
+    },
+    {
+      "path": "contracts/tax/ADDTaxTypes.sol",
+      "sha256": "657b8aa495454e8eda6f1273026b06d751e903ad4610acd36680b29c957eccb5"
+    }
+  ]
+}

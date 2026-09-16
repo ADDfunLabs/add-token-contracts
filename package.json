@@ -1,0 +1,19 @@
+{
+  "name": "add-token-contracts-source",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Verified ADD token implementation source archive and offline build verifier",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "scripts": {
+    "verify": "node scripts/verify.cjs"
+  },
+  "devDependencies": {
+    "solc": "0.8.20"
+  },
+  "overrides": {
+    "tmp": "0.2.7"
+  }
+}
