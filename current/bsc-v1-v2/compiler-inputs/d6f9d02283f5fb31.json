@@ -1,0 +1,32 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/openzeppelin/SafeERC20.sol": {
+      "content": "// SPDX-License-Identifier: MIT\r\n    /// @dev LOCAL IMPLEMENTATION: folder naming/API similarity does not establish OpenZeppelin provenance.\r\n    /// @dev Include this exact source in review. No upstream audit or version equivalence is asserted.\r\npragma solidity ^0.8.20;\r\n\r\n/**\r\n * Local Address + SafeERC20 utilities.\r\n * SafeERC20 supports tokens that:\r\n *  - return true/false\r\n *  - return nothing\r\n *  - revert on failure\r\n */\r\n\r\nlibrary Address {\r\n    function isContract(address account) internal view returns (bool) {\r\n        return account.code.length > 0;\r\n    }\r\n\r\n    function functionCall(address target, bytes memory data, string memory errorMessage)\r\n        internal\r\n        returns (bytes memory)\r\n    {\r\n        require(isContract(target), \"Address: call to non-contract\");\r\n        (bool success, bytes memory returndata) = target.call(data);\r\n        return verifyCallResult(success, returndata, errorMessage);\r\n    }\r\n\r\n    function functionCallWithValue(address target, bytes memory data, uint256 value, string memory errorMessage)\r\n        internal\r\n        returns (bytes memory)\r\n    {\r\n        require(address(this).balance >= value, \"Address: insufficient balance for call\");\r\n        require(isContract(target), \"Address: call to non-contract\");\r\n        (bool success, bytes memory returndata) = target.call{value: value}(data);\r\n        return verifyCallResult(success, returndata, errorMessage);\r\n    }\r\n\r\n    function verifyCallResult(bool success, bytes memory returndata, string memory errorMessage)\r\n        internal\r\n        pure\r\n        returns (bytes memory)\r\n    {\r\n        if (success) return returndata;\r\n        // Look for revert reason and bubble it up if present\r\n        if (returndata.length > 0) {\r\n            /// @solidity memory-safe-assembly\r\n            assembly {\r\n                let returndata_size := mload(returndata)\r\n                revert(add(32, returndata), returndata_size)\r\n            }\r\n        } else {\r\n            revert(errorMessage);\r\n        }\r\n    }\r\n}\r\n\r\n/* Minimal interface used by SafeERC20 */\r\ninterface IERC20Minimal {\r\n    function balanceOf(address account) external view returns (uint256);\r\n    function transfer(address to, uint256 value) external returns (bool);\r\n    function transferFrom(address from,address to,uint256 value) external returns (bool);\r\n    function approve(address spender, uint256 value) external returns (bool);\r\n}\r\n\r\nlibrary SafeERC20 {\n    error SafeERC20FailedOperation(address token);\n    error SafeERC20NonContract(address token);\n\r\n    function safeTransfer(IERC20Minimal token, address to, uint256 value) internal {\r\n        _callOptionalReturn(address(token), abi.encodeWithSelector(token.transfer.selector, to, value));\n    }\r\n\r\n    function safeTransferFrom(IERC20Minimal token, address from, address to, uint256 value) internal {\r\n        _callOptionalReturn(address(token), abi.encodeWithSelector(token.transferFrom.selector, from, to, value));\n    }\r\n\r\n    function safeApprove(IERC20Minimal token, address spender, uint256 value) internal {\r\n        _callOptionalReturn(address(token), abi.encodeWithSelector(token.approve.selector, spender, value));\n    }\r\n\r\n    /**\r\n     * Supports:\r\n     *  - tokens that return (bool)\r\n     *  - tokens that return nothing\r\n     *  - revert on failure\r\n     */\r\n    function _callOptionalReturn(address token, bytes memory data) private {\n        if (token.code.length == 0) revert SafeERC20NonContract(token);\n        (bool success, bytes memory returndata) = token.call(data);\n        if (!success) {\n            if (returndata.length == 0) revert SafeERC20FailedOperation(token);\n            assembly (\"memory-safe\") { revert(add(returndata, 32), mload(returndata)) }\n        }\n        if (returndata.length > 0) {\r\n            // Tokens that return a boolean must not be false\r\n            if (!abi.decode(returndata, (bool))) revert SafeERC20FailedOperation(token);\n        }\r\n    }\r\n}\r\n"
+    },
+    "contracts/tax-v1/ADDTaxSwapReceiverV1.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\nimport \"../openzeppelin/SafeERC20.sol\";\n\n/// @notice V2 output transit only. A V2 pair forbids its token0/token1 as swap recipients,\n///         so tax-token -> quote swaps cannot send their output directly to the tax token.\n/// @dev No tax/accounting decisions, approvals, owner, arbitrary recipient or upgrade.\n///      The factory creates one receiver per token; only that token may collect to itself.\ncontract ADDTaxSwapReceiverV1 {\n    using SafeERC20 for IERC20Minimal;\n    address public immutable token;\n    constructor(address token_) { require(token_.code.length > 0, \"Invalid token\"); token = token_; }\n    function collect(address asset, uint256 amount) external {\n        require(msg.sender == token, \"Only bound token\");\n        IERC20Minimal(asset).safeTransfer(token, amount);\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "viaIR": true,
+    "evmVersion": "paris",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "metadata"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    }
+  }
+}

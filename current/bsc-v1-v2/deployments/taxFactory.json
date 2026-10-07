@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "taxFactory",
+  "address": "0x05b37ad7b5ec4af77eeb9527d49b078223bfa911",
+  "status": "current",
+  "deploymentFamily": "portal-v1",
+  "contractName": "contracts/tax-v1/ADDAutoTaxFactoryV1.sol:ADDAutoTaxFactoryV1",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/51cd5b3f97a72709.json",
+  "abi": "abi/taxFactory.json",
+  "standardInputSha256": "c8ac31d17e4b57e3a13ccdc51c521fecc80132db8c691392e2245fcaa38997ab",
+  "constructor": {
+    "types": [
+      "address"
+    ],
+    "args": [
+      "0x933BC9fe78c9BEAEdC5a82Bd24B5359d01E8FD7B"
+    ],
+    "encodedArguments": "000000000000000000000000933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b"
+  },
+  "creationSha256": "51d86586ab1892be00490823290b42bcc328b572afb03456579e53fbf0e8dc1d",
+  "runtimeTemplateSha256": "5f72a0d8d7ddadac1e22c283fe4099a5fc05aa11871e3b9edb65a6abac07f08e",
+  "immutableReferences": {
+    "1483": [
+      {
+        "length": 32,
+        "start": 689
+      },
+      {
+        "length": 32,
+        "start": 1196
+      },
+      {
+        "length": 32,
+        "start": 1889
+      },
+      {
+        "length": 32,
+        "start": 2106
+      },
+      {
+        "length": 32,
+        "start": 3487
+      }
+    ],
+    "1485": [
+      {
+        "length": 32,
+        "start": 193
+      },
+      {
+        "length": 32,
+        "start": 1240
+      },
+      {
+        "length": 32,
+        "start": 2487
+      }
+    ],
+    "1487": [
+      {
+        "length": 32,
+        "start": 758
+      },
+      {
+        "length": 32,
+        "start": 3404
+      }
+    ],
+    "1489": [
+      {
+        "length": 32,
+        "start": 325
+      },
+      {
+        "length": 32,
+        "start": 2402
+      }
+    ]
+  },
+  "immutableValues": {
+    "1483": "0x000000000000000000000000933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b",
+    "1485": "0x00000000000000000000000010ed43c718714eb63d5aa57b78b54704e256024e",
+    "1487": "0x000000000000000000000000dcd0644fa951dbaee331b9067eb02a8df06fe501",
+    "1489": "0x000000000000000000000000eb9c271f2cfe38d4430e2dac7a97e6bee1f79ae6"
+  },
+  "immutableBindings": {
+    "1483": {
+      "name": "portal",
+      "address": "0x933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b"
+    },
+    "1485": {
+      "name": "router",
+      "address": "0x10ed43c718714eb63d5aa57b78b54704e256024e"
+    },
+    "1487": {
+      "name": "implementation",
+      "address": "0xdcd0644fa951dbaee331b9067eb02a8df06fe501"
+    },
+    "1489": {
+      "name": "dividendImplementation",
+      "address": "0xeb9c271f2cfe38d4430e2dac7a97e6bee1f79ae6"
+    }
+  },
+  "runtimeSha256": "526d8bf1077753539ef568dd24a4692d5c2031850ff42ca2f3a4433af6d237fc",
+  "runtimeCodeHash": "0x557648790ec970a0f91cbddf8b8e017698c548c38398ce840d6b87b3bf511ca9",
+  "runtimeBytes": 4724,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:08:04.343Z",
+    "explorer": "https://bscscan.com/address/0x05b37ad7b5ec4af77eeb9527d49b078223bfa911#code",
+    "evidence": "docs/verification/bsc-core-20261007.json"
+  },
+  "chainObservation": {
+    "at": "2026-10-07T05:20:34.559Z",
+    "blockNumber": 126194967,
+    "scope": "Full runtime bytes matched the recorded immutable bindings; no transactions"
+  }
+}

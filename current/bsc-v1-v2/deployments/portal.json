@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "portal",
+  "address": "0x933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b",
+  "status": "current",
+  "deploymentFamily": "portal-v1",
+  "contractName": "contracts/portal-v1/ADDPortalV1.sol:ADDPortalV1",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/1a514ba63a9a31f2.json",
+  "abi": "abi/portal.json",
+  "standardInputSha256": "58cd14bc27f411b24220a737dc5aef97e965b2a0edb0c81be37998a4e5c226ee",
+  "constructor": {
+    "types": [
+      "address",
+      "address",
+      "address",
+      "bool",
+      "address"
+    ],
+    "args": [
+      "0x100Ce91060CB9C9381949364F3304Fa350F13adD",
+      "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+      "0xCb1D21591759E67E93D5054CaEbb5e972229DADd",
+      true,
+      "0x98541696049c8D93B8d679ad61FF1Ec6D7253Ed1"
+    ],
+    "encodedArguments": "000000000000000000000000100ce91060cb9c9381949364f3304fa350f13add00000000000000000000000010ed43c718714eb63d5aa57b78b54704e256024e000000000000000000000000cb1d21591759e67e93d5054caebb5e972229dadd000000000000000000000000000000000000000000000000000000000000000100000000000000000000000098541696049c8d93b8d679ad61ff1ec6d7253ed1"
+  },
+  "creationSha256": "05a4b8ad322ec9a26f3241fe5691e834ccef616e79e8859177cb4119d582af3a",
+  "runtimeTemplateSha256": "10e52d882a70daeb150184bc2fb48ebea0ad2255a64ae055c02558e563898c89",
+  "immutableReferences": {
+    "2172": [
+      {
+        "length": 32,
+        "start": 8212
+      },
+      {
+        "length": 32,
+        "start": 8566
+      },
+      {
+        "length": 32,
+        "start": 18421
+      },
+      {
+        "length": 32,
+        "start": 18918
+      },
+      {
+        "length": 32,
+        "start": 20596
+      }
+    ],
+    "2174": [
+      {
+        "length": 32,
+        "start": 930
+      }
+    ],
+    "2176": [
+      {
+        "length": 32,
+        "start": 2069
+      },
+      {
+        "length": 32,
+        "start": 3958
+      },
+      {
+        "length": 32,
+        "start": 6010
+      },
+      {
+        "length": 32,
+        "start": 7692
+      },
+      {
+        "length": 32,
+        "start": 8969
+      },
+      {
+        "length": 32,
+        "start": 10071
+      },
+      {
+        "length": 32,
+        "start": 12746
+      },
+      {
+        "length": 32,
+        "start": 14465
+      }
+    ],
+    "2178": [
+      {
+        "length": 32,
+        "start": 1979
+      },
+      {
+        "length": 32,
+        "start": 4386
+      },
+      {
+        "length": 32,
+        "start": 5318
+      },
+      {
+        "length": 32,
+        "start": 5921
+      },
+      {
+        "length": 32,
+        "start": 8009
+      },
+      {
+        "length": 32,
+        "start": 9063
+      },
+      {
+        "length": 32,
+        "start": 11473
+      },
+      {
+        "length": 32,
+        "start": 12656
+      },
+      {
+        "length": 32,
+        "start": 14807
+      },
+      {
+        "length": 32,
+        "start": 18557
+      },
+      {
+        "length": 32,
+        "start": 21915
+      },
+      {
+        "length": 32,
+        "start": 22356
+      },
+      {
+        "length": 32,
+        "start": 22729
+      }
+    ],
+    "3818": [
+      {
+        "length": 32,
+        "start": 8732
+      },
+      {
+        "length": 32,
+        "start": 11367
+      },
+      {
+        "length": 32,
+        "start": 15493
+      },
+      {
+        "length": 32,
+        "start": 16146
+      },
+      {
+        "length": 32,
+        "start": 18108
+      },
+      {
+        "length": 32,
+        "start": 21951
+      },
+      {
+        "length": 32,
+        "start": 22771
+      }
+    ],
+    "6367": [
+      {
+        "length": 32,
+        "start": 17715
+      },
+      {
+        "length": 32,
+        "start": 24332
+      }
+    ]
+  },
+  "immutableValues": {
+    "2172": "0x0000000000000000000000000d334b708273ff378a6c2905d9020ce20d739904",
+    "2174": "0x00000000000000000000000010ed43c718714eb63d5aa57b78b54704e256024e",
+    "2176": "0x000000000000000000000000ca143ce32fe78f1f7019d7d551a6402fc5350c73",
+    "2178": "0x000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+    "3818": "0x0000000000000000000000009542794b73b25afd390b5ca07d628083c7d40456",
+    "6367": "0x00000000000000000000000098541696049c8d93b8d679ad61ff1ec6d7253ed1"
+  },
+  "immutableBindings": {
+    "2172": {
+      "name": "quoteHelper",
+      "address": "0x0d334b708273ff378a6c2905d9020ce20d739904"
+    },
+    "2174": {
+      "name": "router",
+      "address": "0x10ed43c718714eb63d5aa57b78b54704e256024e"
+    },
+    "2176": {
+      "name": "dexFactory",
+      "address": "0xca143ce32fe78f1f7019d7d551a6402fc5350c73"
+    },
+    "2178": {
+      "name": "wrappedNative",
+      "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    },
+    "3818": {
+      "name": "recoveryConverter",
+      "address": "0x9542794b73b25afd390b5ca07d628083c7d40456"
+    },
+    "6367": {
+      "name": "tradeModule",
+      "address": "0x98541696049c8d93b8d679ad61ff1ec6d7253ed1"
+    }
+  },
+  "runtimeSha256": "548ae8016947eb3d21e94d958c55c418216f1939d30c4a0d4f0cc929defdb773",
+  "runtimeCodeHash": "0xdeda7063b0d40b29574026911e5d3d949ae05ff275894cf2ec3c1313b761b466",
+  "runtimeBytes": 24437,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:08:03.095Z",
+    "explorer": "https://bscscan.com/address/0x933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b#code",
+    "evidence": "docs/verification/bsc-core-20261007.json"
+  },
+  "chainObservation": {
+    "at": "2026-10-07T05:20:34.559Z",
+    "blockNumber": 126194967,
+    "scope": "Full runtime bytes matched the recorded immutable bindings; no transactions"
+  }
+}

@@ -1,17 +1,19 @@
 {
   "name": "add-token-contracts-source",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Verified ADD token implementation source archive and offline build verifier",
+  "description": "ADD BSC Portal V1, tax, dividends and staking V2 production source archive and offline verifier",
   "license": "MIT",
   "engines": {
     "node": ">=22 <25"
   },
   "scripts": {
-    "verify": "node scripts/verify.cjs"
+    "verify": "node scripts/verify.cjs",
+    "verify:release": "node scripts/verify.cjs --require-published"
   },
   "devDependencies": {
-    "solc": "0.8.20"
+    "solc": "0.8.20",
+    "js-sha3": "0.8.0"
   },
   "overrides": {
     "tmp": "0.2.7"

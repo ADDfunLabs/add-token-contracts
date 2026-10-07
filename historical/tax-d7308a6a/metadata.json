@@ -1,7 +1,7 @@
 {
   "chainId": 56,
   "address": "0xd7308A6a87BB5d4fe7bdC1fA1b150885d8408bDD",
-  "status": "current",
+  "status": "historical",
   "contractName": "contracts/tax/ADDTaxToken.sol:ADDTaxToken",
   "compilerVersion": "v0.8.20+commit.a1b79de6",
   "constructorArguments": "",
@@ -109,5 +109,6 @@
       "path": "contracts/tax/ADDTaxTypes.sol",
       "sha256": "657b8aa495454e8eda6f1273026b06d751e903ad4610acd36680b29c957eccb5"
     }
-  ]
+  ],
+  "publicationStatusAtArchive": "current"
 }

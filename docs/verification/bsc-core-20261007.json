@@ -1,0 +1,145 @@
+{
+  "at": "2026-10-07T10:08:35.492Z",
+  "chainId": 56,
+  "results": [
+    {
+      "key": "tradeModule",
+      "name": "ADDPortalTradeModuleV1",
+      "address": "0x98541696049c8D93B8d679ad61FF1Ec6D7253Ed1",
+      "runtimeHash": "0x2bdb7392a7414fdb9aac2a72c0c6bfae797e9daebc4c3f51d70ece130f7cd64a",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:00.251Z"
+    },
+    {
+      "key": "portal",
+      "name": "ADDPortalV1",
+      "address": "0x933BC9fe78c9BEAEdC5a82Bd24B5359d01E8FD7B",
+      "runtimeHash": "0xdeda7063b0d40b29574026911e5d3d949ae05ff275894cf2ec3c1313b761b466",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:03.095Z"
+    },
+    {
+      "key": "standardFactory",
+      "name": "ADDVariableFactoryV1",
+      "address": "0xecA7b035890D44a6B8dA97D932509baaADe2b71c",
+      "runtimeHash": "0x80aa4d244f8234d09d85059e75422953421fbb7305d76789b70c2ba90663138f",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:03.674Z"
+    },
+    {
+      "key": "taxFactory",
+      "name": "ADDAutoTaxFactoryV1",
+      "address": "0x05B37aD7b5eC4aF77Eeb9527d49b078223bfa911",
+      "runtimeHash": "0x557648790ec970a0f91cbddf8b8e017698c548c38398ce840d6b87b3bf511ca9",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:04.343Z"
+    },
+    {
+      "key": "tradeQuoter",
+      "name": "ADDPortalQuoterV1",
+      "address": "0x1C0720483EF21f0e5DA8fA0daEC27eeEdBE50F92",
+      "runtimeHash": "0x90ebe2a45dee37fd9f23eccdfb4215d390e9cfb93ba1b7c19079a6cef0f0822b",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:04.927Z"
+    },
+    {
+      "key": "quoter",
+      "name": "ADDPortalQuoterV1",
+      "address": "0x0d334b708273Ff378A6C2905d9020ce20d739904",
+      "runtimeHash": "0x90ebe2a45dee37fd9f23eccdfb4215d390e9cfb93ba1b7c19079a6cef0f0822b",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:05.528Z"
+    },
+    {
+      "key": "converter",
+      "name": "ADDPortalConversionV1",
+      "address": "0x9542794B73B25AFd390b5Ca07D628083c7d40456",
+      "runtimeHash": "0x859c9ba357fe7748bd84addef5b24ae2040a82c1485418201e13a0824f4570f2",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:06.132Z"
+    },
+    {
+      "key": "standardImplementation",
+      "name": "ADDVariableTokenV1",
+      "address": "0x5aC337Ab6815595BD3Dd924b3003Ce83d694bd3d",
+      "runtimeHash": "0xa5d6544ce1f4eb6a5d64aee966b326cb409b5539ff2d43f04d5b0b9eb56a9051",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:06.740Z"
+    },
+    {
+      "key": "taxImplementation",
+      "name": "ADDAutoTaxTokenV1",
+      "address": "0xDcD0644fA951DbAEE331B9067eB02A8Df06FE501",
+      "runtimeHash": "0xd276f2aa7202015f113a6fefe50ffcf883264b2bb4377a14cc281b04f9855511",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:07.693Z"
+    },
+    {
+      "key": "staking.taxImplementation",
+      "name": "ADDAutoTaxTokenV1",
+      "address": "0x5FDe8257C86d3a955243aA436aD0057618D606FF",
+      "runtimeHash": "0x3d6d4b0b513658b8078d7b73f3f33b681cbd9dbbd0699d801cfab573713c4d78",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:08.403Z"
+    },
+    {
+      "key": "dividendImplementation",
+      "name": "ADDClaimDividendV1",
+      "address": "0xeb9C271F2cfE38D4430e2DAc7A97e6BEE1F79AE6",
+      "runtimeHash": "0x427d7578aca4b481d60b79729a2cc53e29168bb1ab8400f9474aac0cb7763dea",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:08.955Z"
+    },
+    {
+      "key": "staking.dividendImplementation",
+      "name": "ADDClaimDividendV1",
+      "address": "0xCFaC91521f319a41B358B166170cB3206B573c85",
+      "runtimeHash": "0xaebb8a0862ab80f748b91447f9fea4c9fd756755762492f6b87134e0f1c27b85",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:09.571Z"
+    },
+    {
+      "key": "staking.standaloneFactory",
+      "name": "ADDStakingFactoryV2",
+      "address": "0x97B96F82b56EBbC8f2Bac6697D0728d3AD91B815",
+      "runtimeHash": "0xe486aef4c2ea792c0480226a561faa216971273fcc70e6bf61e1d35489f18268",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:30.416Z"
+    },
+    {
+      "key": "staking.poolDeployer",
+      "name": "ADDStakingPoolDeployerV2",
+      "address": "0xCB81518Be6E16c4c78b740E1c0032c0fE28fc441",
+      "runtimeHash": "0x84d88f7e51372a04e427b68abf6a191376f1652b9bf4c7c4978b46e67ec863bf",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:32.224Z"
+    },
+    {
+      "key": "staking.taxFactory",
+      "name": "ADDStakingTaxFactoryV2",
+      "address": "0x51f37e77138318E2596614D079F6bdeA49D2FFbb",
+      "runtimeHash": "0xfb0856616049cb0d25e32cda6b0aa19d653ed6c52966187d12a969ba583e8e9d",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:33.964Z"
+    },
+    {
+      "key": "staking.standaloneImplementation",
+      "name": "ADDStakingPoolV2",
+      "address": "0x1907299Ac3AC84b01c802ce3e778827EDc667183",
+      "runtimeHash": "0x6231dbbddb605d27aa77070daa6ba8ef1bc84fd52c8eb23441b5e7acfbc99c0b",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:34.859Z"
+    },
+    {
+      "key": "staking.taxPoolImplementation",
+      "name": "ADDStakingPoolV2",
+      "address": "0x0ae9D3AA1faa6e10810d859F1302D0b9c5Ab1100",
+      "runtimeHash": "0x31016a41adad1033ea7230a9b8b9c21cf6ee761d5db00607f9482a8aebf75c36",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:08:35.491Z"
+    }
+  ],
+  "allVerified": true,
+  "signed": false,
+  "broadcast": false
+}

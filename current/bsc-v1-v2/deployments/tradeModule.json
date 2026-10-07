@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "tradeModule",
+  "address": "0x98541696049c8d93b8d679ad61ff1ec6d7253ed1",
+  "status": "current",
+  "deploymentFamily": "portal-v1",
+  "contractName": "contracts/portal-v1/ADDPortalTradeModuleV1.sol:ADDPortalTradeModuleV1",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/3e6994d9238c25bb.json",
+  "abi": "abi/tradeModule.json",
+  "standardInputSha256": "9d3a76f74e2bfa51c1914d87374035c4463fe221a2982a4186106b94d08e6b15",
+  "constructor": {
+    "types": [
+      "address"
+    ],
+    "args": [
+      "0x10ED43C718714eb63d5aA57B78B54704E256024E"
+    ],
+    "encodedArguments": "00000000000000000000000010ed43c718714eb63d5aa57b78b54704e256024e"
+  },
+  "creationSha256": "e4b4dbc84930128e1259b52f442f7323d647628a5f3f055faba60cc746c22860",
+  "runtimeTemplateSha256": "ee5153c3a041b55a1b1559955e3d220a72093801f03407620a70e3ec09775cd7",
+  "immutableReferences": {
+    "1162": [
+      {
+        "length": 32,
+        "start": 7626
+      },
+      {
+        "length": 32,
+        "start": 17918
+      },
+      {
+        "length": 32,
+        "start": 18262
+      },
+      {
+        "length": 32,
+        "start": 18592
+      }
+    ],
+    "1164": [
+      {
+        "length": 32,
+        "start": 576
+      },
+      {
+        "length": 32,
+        "start": 10428
+      },
+      {
+        "length": 32,
+        "start": 11487
+      },
+      {
+        "length": 32,
+        "start": 11737
+      },
+      {
+        "length": 32,
+        "start": 11838
+      }
+    ],
+    "1166": [
+      {
+        "length": 32,
+        "start": 1716
+      },
+      {
+        "length": 32,
+        "start": 3537
+      },
+      {
+        "length": 32,
+        "start": 5554
+      },
+      {
+        "length": 32,
+        "start": 7160
+      },
+      {
+        "length": 32,
+        "start": 8387
+      },
+      {
+        "length": 32,
+        "start": 12937
+      },
+      {
+        "length": 32,
+        "start": 14591
+      }
+    ],
+    "1168": [
+      {
+        "length": 32,
+        "start": 1626
+      },
+      {
+        "length": 32,
+        "start": 3911
+      },
+      {
+        "length": 32,
+        "start": 4862
+      },
+      {
+        "length": 32,
+        "start": 5465
+      },
+      {
+        "length": 32,
+        "start": 7423
+      },
+      {
+        "length": 32,
+        "start": 10325
+      },
+      {
+        "length": 32,
+        "start": 11623
+      },
+      {
+        "length": 32,
+        "start": 12847
+      },
+      {
+        "length": 32,
+        "start": 14859
+      }
+    ],
+    "3366": [
+      {
+        "length": 32,
+        "start": 9628
+      },
+      {
+        "length": 32,
+        "start": 10911
+      }
+    ]
+  },
+  "immutableValues": {
+    "1162": "0x0000000000000000000000001c0720483ef21f0e5da8fa0daec27eeedbe50f92",
+    "1164": "0x00000000000000000000000010ed43c718714eb63d5aa57b78b54704e256024e",
+    "1166": "0x000000000000000000000000ca143ce32fe78f1f7019d7d551a6402fc5350c73",
+    "1168": "0x000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+    "3366": "0x00000000000000000000000098541696049c8d93b8d679ad61ff1ec6d7253ed1"
+  },
+  "immutableBindings": {
+    "1162": {
+      "name": "quoteHelper",
+      "address": "0x1c0720483ef21f0e5da8fa0daec27eeedbe50f92"
+    },
+    "1164": {
+      "name": "router",
+      "address": "0x10ed43c718714eb63d5aa57b78b54704e256024e"
+    },
+    "1166": {
+      "name": "dexFactory",
+      "address": "0xca143ce32fe78f1f7019d7d551a6402fc5350c73"
+    },
+    "1168": {
+      "name": "wrappedNative",
+      "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    },
+    "3366": {
+      "name": "moduleAddress",
+      "address": "0x98541696049c8d93b8d679ad61ff1ec6d7253ed1"
+    }
+  },
+  "runtimeSha256": "f3fa5979e1d7fb0e3efceb25ac683008572ecab843184bdab5a1be70c64499f7",
+  "runtimeCodeHash": "0x2bdb7392a7414fdb9aac2a72c0c6bfae797e9daebc4c3f51d70ece130f7cd64a",
+  "runtimeBytes": 19748,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:08:00.251Z",
+    "explorer": "https://bscscan.com/address/0x98541696049c8d93b8d679ad61ff1ec6d7253ed1#code",
+    "evidence": "docs/verification/bsc-core-20261007.json"
+  },
+  "chainObservation": {
+    "at": "2026-10-07T05:20:34.559Z",
+    "blockNumber": 126194967,
+    "scope": "Full runtime bytes matched the recorded immutable bindings; no transactions"
+  }
+}

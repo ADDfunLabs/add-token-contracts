@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "swapReceiver.65d282fa",
+  "address": "0x98d3b670097c17e54c48dd3d656e6d110611031f",
+  "status": "current",
+  "deploymentFamily": "per-token-tax-helper",
+  "contractName": "contracts/tax-v1/ADDTaxSwapReceiverV1.sol:ADDTaxSwapReceiverV1",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/d6f9d02283f5fb31.json",
+  "abi": "abi/swapReceiver-65d282fa.json",
+  "standardInputSha256": "bc4b107f047737303e795d75b5175e414947f7f15508dde33f3e416849bbe83d",
+  "constructor": {
+    "types": [
+      "address"
+    ],
+    "args": [
+      "0x65d282fadc0283d537001b43d8c08b69eabc1111"
+    ],
+    "encodedArguments": "00000000000000000000000065d282fadc0283d537001b43d8c08b69eabc1111"
+  },
+  "creationSha256": "c9a6bf921c5633e1efc293bf53b302a707d6882fc8d6c87a33af8d4af19da0af",
+  "runtimeTemplateSha256": "8dc228f087485e2c628f8f597a2d3d0729a48fabfca6fdaaaece4d5d3a460b66",
+  "immutableReferences": {
+    "326": [
+      {
+        "length": 32,
+        "start": 77
+      },
+      {
+        "length": 32,
+        "start": 171
+      }
+    ]
+  },
+  "immutableValues": {
+    "326": "0x00000000000000000000000065d282fadc0283d537001b43d8c08b69eabc1111"
+  },
+  "immutableBindings": {
+    "326": {
+      "name": "token",
+      "address": "0x65d282fadc0283d537001b43d8c08b69eabc1111"
+    }
+  },
+  "runtimeSha256": "e7a6592b5665f78caaf959fe525a4440b7f91d40cffc38135bd62f315c083595",
+  "runtimeCodeHash": "0x0873b9cf27631d8815b68d555c60cc2ab12350e9e676b7de52841f95727ca054",
+  "runtimeBytes": 613,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:31:07.953Z",
+    "explorer": "https://bscscan.com/address/0x98d3b670097c17e54c48dd3d656e6d110611031f#code",
+    "evidence": "docs/verification/bsc-tax-receivers-20261007.json"
+  },
+  "boundToken": "0x65d282fadc0283d537001b43d8c08b69eabc1111",
+  "chainObservation": {
+    "at": "2026-10-07T10:31:07.953Z",
+    "scope": "Read-only complete runtime keccak256 matched the compiled immutable token binding; no signatures or transactions"
+  }
+}

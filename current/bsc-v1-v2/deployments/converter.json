@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "converter",
+  "address": "0x9542794b73b25afd390b5ca07d628083c7d40456",
+  "status": "current",
+  "deploymentFamily": "portal-v1",
+  "contractName": "contracts/portal-v1/ADDPortalConversionV1.sol:ADDPortalConversionV1",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/f4241559431d711c.json",
+  "abi": "abi/converter.json",
+  "standardInputSha256": "3a5595969a563b18b5c92301769f3a1b77c3afb28853e5bdbe548450c33a556b",
+  "constructor": {
+    "types": [
+      "address"
+    ],
+    "args": [
+      "0x10ED43C718714eb63d5aA57B78B54704E256024E"
+    ],
+    "encodedArguments": "00000000000000000000000010ed43c718714eb63d5aa57b78b54704e256024e"
+  },
+  "creationSha256": "10b0e214797e2e324b577fa542de83cfeee01d2100d8dad26e732287f6193c55",
+  "runtimeTemplateSha256": "0185c6f1801196d1fe3de8f9a7e5f8e2ea29e5b9200249a88446c7c998c9d163",
+  "immutableReferences": {
+    "542": [
+      {
+        "length": 32,
+        "start": 391
+      },
+      {
+        "length": 32,
+        "start": 561
+      },
+      {
+        "length": 32,
+        "start": 636
+      },
+      {
+        "length": 32,
+        "start": 2195
+      },
+      {
+        "length": 32,
+        "start": 2635
+      },
+      {
+        "length": 32,
+        "start": 2728
+      },
+      {
+        "length": 32,
+        "start": 2804
+      },
+      {
+        "length": 32,
+        "start": 2859
+      },
+      {
+        "length": 32,
+        "start": 3502
+      },
+      {
+        "length": 32,
+        "start": 3668
+      },
+      {
+        "length": 32,
+        "start": 7147
+      },
+      {
+        "length": 32,
+        "start": 7233
+      },
+      {
+        "length": 32,
+        "start": 7310
+      },
+      {
+        "length": 32,
+        "start": 7613
+      },
+      {
+        "length": 32,
+        "start": 7749
+      },
+      {
+        "length": 32,
+        "start": 7897
+      },
+      {
+        "length": 32,
+        "start": 8344
+      }
+    ],
+    "544": [
+      {
+        "length": 32,
+        "start": 164
+      },
+      {
+        "length": 32,
+        "start": 807
+      },
+      {
+        "length": 32,
+        "start": 2262
+      },
+      {
+        "length": 32,
+        "start": 5009
+      },
+      {
+        "length": 32,
+        "start": 6734
+      },
+      {
+        "length": 32,
+        "start": 7426
+      },
+      {
+        "length": 32,
+        "start": 7481
+      },
+      {
+        "length": 32,
+        "start": 7697
+      }
+    ],
+    "546": [
+      {
+        "length": 32,
+        "start": 236
+      },
+      {
+        "length": 32,
+        "start": 6435
+      },
+      {
+        "length": 32,
+        "start": 6479
+      },
+      {
+        "length": 32,
+        "start": 6532
+      }
+    ]
+  },
+  "immutableValues": {
+    "542": "0x000000000000000000000000933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b",
+    "544": "0x00000000000000000000000010ed43c718714eb63d5aa57b78b54704e256024e",
+    "546": "0x000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+  },
+  "immutableBindings": {
+    "542": {
+      "name": "portal",
+      "address": "0x933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b"
+    },
+    "544": {
+      "name": "router",
+      "address": "0x10ed43c718714eb63d5aa57b78b54704e256024e"
+    },
+    "546": {
+      "name": "wrappedNative",
+      "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    }
+  },
+  "runtimeSha256": "4c7c47b1674b41d6c2e99a4da3bcdb572fc928b31780ce58fa8e4de070d9a73a",
+  "runtimeCodeHash": "0x859c9ba357fe7748bd84addef5b24ae2040a82c1485418201e13a0824f4570f2",
+  "runtimeBytes": 8822,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:08:06.132Z",
+    "explorer": "https://bscscan.com/address/0x9542794b73b25afd390b5ca07d628083c7d40456#code",
+    "evidence": "docs/verification/bsc-core-20261007.json"
+  },
+  "chainObservation": {
+    "at": "2026-10-07T05:20:34.559Z",
+    "blockNumber": 126194967,
+    "scope": "Full runtime bytes matched the recorded immutable bindings; no transactions"
+  }
+}

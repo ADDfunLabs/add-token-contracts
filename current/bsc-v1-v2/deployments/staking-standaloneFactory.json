@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "staking.standaloneFactory",
+  "address": "0x97b96f82b56ebbc8f2bac6697d0728d3ad91b815",
+  "status": "current",
+  "deploymentFamily": "staking-v2",
+  "contractName": "contracts/staking-v2/ADDStakingFactoryV2.sol:ADDStakingFactoryV2",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/866f6a61df531781.json",
+  "abi": "abi/staking-standaloneFactory.json",
+  "standardInputSha256": "5a5786122eb083f4f33841b275d4b1a3278af62f8d88d8fb4545ece8a26d9f34",
+  "constructor": {
+    "types": [
+      "address"
+    ],
+    "args": [
+      "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+    ],
+    "encodedArguments": "000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+  },
+  "creationSha256": "f5d404a6f9985e2c65bd0f40299eb337c85525673155a90465032e1fd2d07796",
+  "runtimeTemplateSha256": "860280c396604141bcf87e8978bbc2ba0d4d1dded1297f87aa836206d0fa32a8",
+  "immutableReferences": {
+    "539": [
+      {
+        "length": 32,
+        "start": 293
+      },
+      {
+        "length": 32,
+        "start": 1147
+      },
+      {
+        "length": 32,
+        "start": 2405
+      }
+    ],
+    "544": [
+      {
+        "length": 32,
+        "start": 773
+      },
+      {
+        "length": 32,
+        "start": 1663
+      },
+      {
+        "length": 32,
+        "start": 2230
+      }
+    ]
+  },
+  "immutableValues": {
+    "539": "0x000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+    "544": "0x0000000000000000000000001907299ac3ac84b01c802ce3e778827edc667183"
+  },
+  "immutableBindings": {
+    "539": {
+      "name": "wrappedNative",
+      "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    },
+    "544": {
+      "name": "implementation",
+      "address": "0x1907299ac3ac84b01c802ce3e778827edc667183"
+    }
+  },
+  "runtimeSha256": "0b8ede3987feadea2b1263de5a519c2d1d2c6d858c2123d8265568c9a004c7ac",
+  "runtimeCodeHash": "0xe486aef4c2ea792c0480226a561faa216971273fcc70e6bf61e1d35489f18268",
+  "runtimeBytes": 4753,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:08:30.416Z",
+    "explorer": "https://bscscan.com/address/0x97b96f82b56ebbc8f2bac6697d0728d3ad91b815#code",
+    "evidence": "docs/verification/bsc-core-20261007.json"
+  },
+  "chainObservation": {
+    "at": "2026-10-07T05:20:34.559Z",
+    "blockNumber": 126194967,
+    "scope": "Full runtime bytes matched the recorded immutable bindings; no transactions"
+  }
+}

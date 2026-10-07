@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "staking.taxPoolImplementation",
+  "address": "0x0ae9d3aa1faa6e10810d859f1302d0b9c5ab1100",
+  "status": "current",
+  "deploymentFamily": "staking-v2",
+  "contractName": "contracts/staking-v2/ADDStakingPoolV2.sol:ADDStakingPoolV2",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/003feaa57937bdd3.json",
+  "abi": "abi/staking-taxPoolImplementation.json",
+  "standardInputSha256": "f08e7a56a3c0c5c0fb90a517ac55f150a195eb94a91b836745d736a61f20816e",
+  "constructor": {
+    "types": [
+      "address"
+    ],
+    "args": [
+      "0x51f37e77138318E2596614D079F6bdeA49D2FFbb"
+    ],
+    "encodedArguments": "00000000000000000000000051f37e77138318e2596614d079f6bdea49d2ffbb"
+  },
+  "creationSha256": "1edc82f2695d248d45e8819b71987b0c265efec05223d75b68e5a15819f45888",
+  "runtimeTemplateSha256": "9b3c61c959907e42b06fb072d6bf1c087868914a7e3f87ca1bf9d9a26083bbbe",
+  "immutableReferences": {
+    "603": [
+      {
+        "length": 32,
+        "start": 1640
+      },
+      {
+        "length": 32,
+        "start": 1888
+      },
+      {
+        "length": 32,
+        "start": 6551
+      },
+      {
+        "length": 32,
+        "start": 13161
+      }
+    ]
+  },
+  "immutableValues": {
+    "603": "0x00000000000000000000000051f37e77138318e2596614d079f6bdea49d2ffbb"
+  },
+  "immutableBindings": {
+    "603": {
+      "name": "initializationFactory",
+      "address": "0x51f37e77138318e2596614d079f6bdea49d2ffbb"
+    }
+  },
+  "runtimeSha256": "80b0765e9ea6056a5cc6482615fcb7575a246b1e1074101d5dd6560576ef2d95",
+  "runtimeCodeHash": "0x31016a41adad1033ea7230a9b8b9c21cf6ee761d5db00607f9482a8aebf75c36",
+  "runtimeBytes": 21828,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:08:35.491Z",
+    "explorer": "https://bscscan.com/address/0x0ae9d3aa1faa6e10810d859f1302d0b9c5ab1100#code",
+    "evidence": "docs/verification/bsc-core-20261007.json"
+  },
+  "chainObservation": {
+    "at": "2026-10-07T05:20:34.559Z",
+    "blockNumber": 126194967,
+    "scope": "Full runtime bytes matched the recorded immutable bindings; no transactions"
+  }
+}

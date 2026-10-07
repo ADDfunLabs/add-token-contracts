@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "taxImplementation",
+  "address": "0xdcd0644fa951dbaee331b9067eb02a8df06fe501",
+  "status": "current",
+  "deploymentFamily": "portal-v1",
+  "contractName": "contracts/tax-v1/ADDAutoTaxTokenV1.sol:ADDAutoTaxTokenV1",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/e6b3869f994e6516.json",
+  "abi": "abi/taxImplementation.json",
+  "standardInputSha256": "b46fc5166283237ddcbd60eb4765c66c4454da530281288cf151bc1f8649f722",
+  "constructor": {
+    "types": [],
+    "args": [],
+    "encodedArguments": ""
+  },
+  "creationSha256": "8d453388e47fc8925fa97ce4dc9b94499fb5872edb497b90cf238173885e128d",
+  "runtimeTemplateSha256": "b08e51cd36f8cbc28f5b8896831e8063a16c9d3d2d561cfb9096ab200967e0dd",
+  "immutableReferences": {
+    "1614": [
+      {
+        "length": 32,
+        "start": 858
+      },
+      {
+        "length": 32,
+        "start": 1853
+      }
+    ]
+  },
+  "immutableValues": {
+    "1614": "0x00000000000000000000000005b37ad7b5ec4af77eeb9527d49b078223bfa911"
+  },
+  "immutableBindings": {
+    "1614": {
+      "name": "initializationFactory",
+      "address": "0x05b37ad7b5ec4af77eeb9527d49b078223bfa911"
+    }
+  },
+  "runtimeSha256": "631a048ec303cb94ed7fc6c1c37c2d6ce45699d702bc2c18dac7969444337df4",
+  "runtimeCodeHash": "0xd276f2aa7202015f113a6fefe50ffcf883264b2bb4377a14cc281b04f9855511",
+  "runtimeBytes": 24263,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:08:07.693Z",
+    "explorer": "https://bscscan.com/address/0xdcd0644fa951dbaee331b9067eb02a8df06fe501#code",
+    "evidence": "docs/verification/bsc-core-20261007.json"
+  },
+  "chainObservation": {
+    "at": "2026-10-07T05:20:34.559Z",
+    "blockNumber": 126194967,
+    "scope": "Full runtime bytes matched the recorded immutable bindings; no transactions"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "staking.taxFactory",
+  "address": "0x51f37e77138318e2596614d079f6bdea49d2ffbb",
+  "status": "current",
+  "deploymentFamily": "staking-v2",
+  "contractName": "contracts/staking-v2/ADDStakingTaxFactoryV2.sol:ADDStakingTaxFactoryV2",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/3fd5d5b9eb66c658.json",
+  "abi": "abi/staking-taxFactory.json",
+  "standardInputSha256": "8cca31e2567d11678f35988cace88d7b159dfa16f44f8bfed9aba2001c7c69a3",
+  "constructor": {
+    "types": [
+      "address",
+      "address"
+    ],
+    "args": [
+      "0x933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b",
+      "0xCB81518Be6E16c4c78b740E1c0032c0fE28fc441"
+    ],
+    "encodedArguments": "000000000000000000000000933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b000000000000000000000000cb81518be6e16c4c78b740e1c0032c0fe28fc441"
+  },
+  "creationSha256": "51b9ae768a5a07e96ec216f41b33e96c1404fe1b5d3117a0cb9321407668bff1",
+  "runtimeTemplateSha256": "5b37c66d33f2107f1f305bf8793964b6af4f0ae5900c8032d22988f675dcf69b",
+  "immutableReferences": {
+    "5378": [
+      {
+        "length": 32,
+        "start": 359
+      },
+      {
+        "length": 32,
+        "start": 1543
+      }
+    ],
+    "5927": [
+      {
+        "length": 32,
+        "start": 2130
+      },
+      {
+        "length": 32,
+        "start": 2866
+      },
+      {
+        "length": 32,
+        "start": 2951
+      },
+      {
+        "length": 32,
+        "start": 4268
+      },
+      {
+        "length": 32,
+        "start": 4831
+      },
+      {
+        "length": 32,
+        "start": 7509
+      }
+    ],
+    "5929": [
+      {
+        "length": 32,
+        "start": 285
+      },
+      {
+        "length": 32,
+        "start": 1470
+      },
+      {
+        "length": 32,
+        "start": 2174
+      },
+      {
+        "length": 32,
+        "start": 4873
+      },
+      {
+        "length": 32,
+        "start": 5689
+      }
+    ],
+    "5931": [
+      {
+        "length": 32,
+        "start": 4339
+      },
+      {
+        "length": 32,
+        "start": 7422
+      }
+    ],
+    "5933": [
+      {
+        "length": 32,
+        "start": 983
+      },
+      {
+        "length": 32,
+        "start": 3533
+      },
+      {
+        "length": 32,
+        "start": 5630
+      }
+    ]
+  },
+  "immutableValues": {
+    "5378": "0x0000000000000000000000000ae9d3aa1faa6e10810d859f1302d0b9c5ab1100",
+    "5927": "0x000000000000000000000000933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b",
+    "5929": "0x00000000000000000000000010ed43c718714eb63d5aa57b78b54704e256024e",
+    "5931": "0x0000000000000000000000005fde8257c86d3a955243aa436ad0057618d606ff",
+    "5933": "0x000000000000000000000000cfac91521f319a41b358b166170cb3206b573c85"
+  },
+  "immutableBindings": {
+    "5378": {
+      "name": "stakingImplementation",
+      "address": "0x0ae9d3aa1faa6e10810d859f1302d0b9c5ab1100"
+    },
+    "5927": {
+      "name": "portal",
+      "address": "0x933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b"
+    },
+    "5929": {
+      "name": "router",
+      "address": "0x10ed43c718714eb63d5aa57b78b54704e256024e"
+    },
+    "5931": {
+      "name": "implementation",
+      "address": "0x5fde8257c86d3a955243aa436ad0057618d606ff"
+    },
+    "5933": {
+      "name": "dividendImplementation",
+      "address": "0xcfac91521f319a41b358b166170cb3206b573c85"
+    }
+  },
+  "runtimeSha256": "818124e20aa2cb5ae3db18e1eb6e94054f330c43139adf7692664f29816199e5",
+  "runtimeCodeHash": "0xfb0856616049cb0d25e32cda6b0aa19d653ed6c52966187d12a969ba583e8e9d",
+  "runtimeBytes": 8735,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:08:33.964Z",
+    "explorer": "https://bscscan.com/address/0x51f37e77138318e2596614d079f6bdea49d2ffbb#code",
+    "evidence": "docs/verification/bsc-core-20261007.json"
+  },
+  "chainObservation": {
+    "at": "2026-10-07T05:20:34.559Z",
+    "blockNumber": 126194967,
+    "scope": "Full runtime bytes matched the recorded immutable bindings; no transactions"
+  }
+}

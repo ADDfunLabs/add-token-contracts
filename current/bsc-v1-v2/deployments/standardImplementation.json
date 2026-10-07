@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "standardImplementation",
+  "address": "0x5ac337ab6815595bd3dd924b3003ce83d694bd3d",
+  "status": "current",
+  "deploymentFamily": "portal-v1",
+  "contractName": "contracts/portal-v1/ADDVariableTokenV1.sol:ADDVariableTokenV1",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/156dba57360fcede.json",
+  "abi": "abi/standardImplementation.json",
+  "standardInputSha256": "2a0d0e0b5aa29de1637ae0f0d794923522cbb1ed78a737815b8c5963e359dae9",
+  "constructor": {
+    "types": [],
+    "args": [],
+    "encodedArguments": ""
+  },
+  "creationSha256": "957035fdf9d11208a7c3da91cfbffd97ac40e9dd65560db412f219953c73fee1",
+  "runtimeTemplateSha256": "ec3d37497f4ef6bc6face458c742c26c6752552736e5fbf3358bc4c894432dd0",
+  "immutableReferences": {
+    "682": [
+      {
+        "length": 32,
+        "start": 409
+      },
+      {
+        "length": 32,
+        "start": 1673
+      }
+    ]
+  },
+  "immutableValues": {
+    "682": "0x000000000000000000000000eca7b035890d44a6b8da97d932509baaade2b71c"
+  },
+  "immutableBindings": {
+    "682": {
+      "name": "initializationFactory",
+      "address": "0xeca7b035890d44a6b8da97d932509baaade2b71c"
+    }
+  },
+  "runtimeSha256": "86062838a9533d03a0312c89466205898de7b63813e604a7e18a78fc36393d34",
+  "runtimeCodeHash": "0xa5d6544ce1f4eb6a5d64aee966b326cb409b5539ff2d43f04d5b0b9eb56a9051",
+  "runtimeBytes": 5344,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:08:06.740Z",
+    "explorer": "https://bscscan.com/address/0x5ac337ab6815595bd3dd924b3003ce83d694bd3d#code",
+    "evidence": "docs/verification/bsc-core-20261007.json"
+  },
+  "chainObservation": {
+    "at": "2026-10-07T05:20:34.559Z",
+    "blockNumber": 126194967,
+    "scope": "Full runtime bytes matched the recorded immutable bindings; no transactions"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-07T10:31:11.025Z",
+  "chainId": 56,
+  "results": [
+    {
+      "key": "swapReceiver.65d282fa",
+      "name": "ADDTaxSwapReceiverV1",
+      "address": "0x98d3b670097c17E54C48Dd3d656E6d110611031f",
+      "runtimeHash": "0x0873b9cf27631d8815b68d555c60cc2ab12350e9e676b7de52841f95727ca054",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:31:07.953Z"
+    },
+    {
+      "key": "swapReceiver.43f1c54d",
+      "name": "ADDTaxSwapReceiverV1",
+      "address": "0xe507652Db3ae86B6604577758cEE688F56e3daA3",
+      "runtimeHash": "0x755d3949c7cd487903e9cb6bec42bad473c165d052c7d98dea6e47afc7ba87fa",
+      "status": "verified",
+      "checkedAt": "2026-10-07T10:31:11.024Z"
+    }
+  ],
+  "allVerified": true,
+  "signed": false,
+  "broadcast": false
+}

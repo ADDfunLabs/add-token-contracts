@@ -1,34 +1,39 @@
-# Reproducing and checking the publication
+# Source and bytecode verification
 
-## Publication checks
+## Current V1/V2 release
 
-Every bundle was independently checked before publication:
+The source closure under `current/bsc-v1-v2/contracts/` is 26 production files. The 14 isolated inputs contain only the dependencies required by their targets. Each input was compiled and its ABI, complete creation bytecode and runtime template compared to the archived deployment build for the matching V1 or V2 deployment. All 17 protocol-role records and both per-token tax swap receiver records passed.
 
-1. Fetch the publicly verified Standard JSON source from BscScan/Etherscan for chain 56; compare every source content string and all code-generation settings to the saved publication input.
-2. Recompile with `solc 0.8.20+commit.a1b79de6`, optimizer enabled/200 runs, viaIR true, EVM paris. BscScan may request extra documentation/metadata outputs; both output selections are recorded and do not change code-generation settings.
-3. Read the template's bytecode and `initializationAuthority()` at one finalized BSC block. The constructor stores its deployer as an immutable. Apply that public address at the compiler-reported immutable locations and compare the **entire** runtime bytecode, including compiler metadata, to the chain.
-4. Confirm the block hash has not changed. Record block number/hash, address, UTC check time, runtime keccak256, SHA-256 hashes, immutable locations and values in `metadata.json`.
+This matters for `viaIR`: compiling an arbitrary combined collection can change generated code. Do not replace the per-target inputs with one merged input or mix historical dependencies. This release's isolated inputs reproduce the deployed target templates; no old or test contracts are needed as background compilation context.
 
-Empty `constructorArguments` is correct: these template constructors have no externally supplied arguments. Their immutable authority comes from constructor `msg.sender`, so a zero-placeholder runtime would not match the deployment.
+The compiler is exactly `0.8.20+commit.a1b79de6`, optimizer enabled with 200 runs, viaIR true, EVM paris. `manifest.json` freezes the extracted sources and input hashes. Each `deployments/*.json` records its qualified contract name, ABI path, constructor arguments, ABI-encoded constructor arguments, creation/template SHA-256, immutable offsets and public values, and full runtime SHA-256/keccak256.
 
-## Offline verification
+Some constructors capture `msg.sender`. Standard, automatic-tax and dividend template constructors therefore have **no ABI arguments**, although their runtime contains the factory address as `initializationFactory`. Staking V2 pool templates take the initialization factory as an explicit constructor argument. Quoters and the recovery converter take the router; the converter also captures its deploying Portal. Applying a zero placeholder or supplying a factory argument to an argumentless constructor is incorrect.
 
-`npm ci --ignore-scripts && npm run verify` uses the lockfile and then compiles all five bundles offline. It checks:
+The recorded runtime observation is a read-only chain check at the block or time specified in the records. Substituting the recorded immutable values into the matching compiler output reproduced the entire runtime, including its Solidity metadata, for all 17 protocol addresses and both per-token receivers. `sourceVerification` separately records browser publication status; successful compilation alone never means browser verification succeeded.
 
-- Compiler version and manifest entries.
-- Exact Standard JSON file hash; all extracted source files and their SHA-256 hashes, without newline conversion.
-- Compiled ABI, creation bytecode, runtime template, immutable locations and substituted-runtime SHA-256.
+## Offline checks
 
-The offline verifier uses the values recorded at publication. It does **not** query BscScan or a node, establish that the manifest itself is trusted, check a user's clone address, or audit protocol behavior. A newly deployed copy would have a different initialization authority unless deployed by the same authorized factory.
+~~~sh
+npm ci --ignore-scripts
+npm run verify
+npm run verify:release
+~~~
 
-To make a fresh independent chain check, use your own BSC node at the recorded block, obtain `eth_getCode` for each implementation address, hash the returned bytes and compare to `runtimeCodeHash`. You can also inspect the linked BscScan verified source. No account secrets are required for the offline check.
+The verifier checks the exact dependency closure and source contents, compiler-input hashes, compiler settings, ABI, creation/template bytecode, immutable locations and values, constructor encoding and complete substituted runtime. Historical bundles retain their own sources and verification records. The compiler outputs are cached in memory only for this run; inputs shared by different deployed roles are compiled once.
 
-The lockfile overrides the compiler wrapper's temporary-file dependency to tmp 0.2.7 to address known path-traversal advisories. The solc compiler itself stays exactly 0.8.20; the bytecode reproduction check confirms that this dependency update does not change the compiled contracts.
+`verify:release` adds a check that every current role's recorded explorer status is `verified`. This is a publication-record check, not a new explorer request. Neither command imports a wallet, reads credentials, uses RPC, signs, deploys or pays anything. The archive has no private deployment scripts.
 
-## Scope of reproducibility
+## Fresh independent checks
 
-The address in a bundle is an implementation. Individual EIP-1167 token clones refer to an implementation, while their metadata, parameters and balances live in each clone's storage. Matching an implementation is only one part of checking a token.
+Use your own BSC node, first confirm chain ID 56, and read the recorded address's `eth_getCode` at a common confirmed block. Hash the complete returned bytes with keccak256 and compare to `runtimeCodeHash`. Read the immutable getters at that same block and compare their public bindings; check the block hash again after reading to detect a reorganization. Public BscScan links are listed in [DEPLOYMENTS.md](DEPLOYMENTS.md).
 
-This repository intentionally preserves exact token dependency sources, not the full Hardhat build-info or unrelated platform contracts. The tax bundle imports dividend/configuration sources, but it does not provide all externally called module implementations. Source comments may refer to internal files outside this archive.
+Source matching does not establish whether an arbitrary user token is official. Token and pool instances are immutable EIP-1167 clones. Their runtime must refer to the expected implementation; their initialization/factory/Portal bindings and official membership must also be checked. Parameters and balances live in each clone, not in the template address. This repository does not enumerate every instance.
 
-This is a source publication with reproducible build evidence, **not an independent security audit**. The public platform [permission disclosure](https://add.fun/docs/en/permissions/) applies separately.
+PancakeSwap's router is an external dependency with its own verified source. It is referenced by address, not republished as ADD-owned code. Historical snapshots are evidence for their specific old deployments and do not implement current V1/V2 rules.
+
+## Verification boundaries
+
+This is reproducible source publication, not an independent security audit. Repository updates do not alter deployed code. Immutable code still has the owner operations documented in the source, and arbitrary rebasing, transfer-taxed, malicious or restricted assets can have behavior beyond standard ERC20 assumptions.
+
+The lockfile pins `solc` 0.8.20 and `js-sha3` 0.8.0. The compiler wrapper's temporary-file dependency is overridden to `tmp` 0.2.7; bytecode reproduction confirms that this dependency update does not change the target output.

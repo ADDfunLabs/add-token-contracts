@@ -1,0 +1,695 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "portal_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "poolDeployer_",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "dividend",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "supply",
+        "type": "uint256"
+      }
+    ],
+    "name": "TokenCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "pool",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint16",
+        "name": "cycleDays",
+        "type": "uint16"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "stakeMode",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "customStake",
+        "type": "address"
+      }
+    ],
+    "name": "TokenStakingCreated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "salt",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "expectedAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "quoteAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "targetBNB",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quoteTarget",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "customTarget",
+            "type": "bool"
+          },
+          {
+            "internalType": "string",
+            "name": "metadataURI",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct ADDAutoTaxFactoryV1.Launch",
+        "name": "p",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "buyTaxBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "sellTaxBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "marketingBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "burnBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "dividendBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "liquidityBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "address",
+            "name": "marketingWallet",
+            "type": "address"
+          },
+          {
+            "internalType": "enum ADDAutoTaxTokenV1.RewardMode",
+            "name": "rewardMode",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "rewardToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumHolding",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ADDAutoTaxTokenV1.Config",
+        "name": "c",
+        "type": "tuple"
+      }
+    ],
+    "name": "createToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "supply",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "salt",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "expectedAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "quoteAsset",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "targetBNB",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "quoteTarget",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "customTarget",
+            "type": "bool"
+          },
+          {
+            "internalType": "string",
+            "name": "metadataURI",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct ADDAutoTaxFactoryV1.Launch",
+        "name": "p",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "buyTaxBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "sellTaxBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "marketingBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "burnBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "dividendBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "liquidityBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "address",
+            "name": "marketingWallet",
+            "type": "address"
+          },
+          {
+            "internalType": "enum ADDAutoTaxTokenV1.RewardMode",
+            "name": "rewardMode",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "rewardToken",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "minimumHolding",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ADDAutoTaxTokenV1.Config",
+        "name": "requested",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "enum ADDStakingPoolV2.WithdrawalMode",
+                "name": "mode",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint16",
+                "name": "initialDays",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "intervalDays",
+                "type": "uint16"
+              },
+              {
+                "internalType": "uint16",
+                "name": "batches",
+                "type": "uint16"
+              }
+            ],
+            "internalType": "struct ADDStakingPoolV2.PrincipalLock",
+            "name": "principalLock",
+            "type": "tuple"
+          },
+          {
+            "internalType": "uint16",
+            "name": "cycleDays",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint8",
+            "name": "stakeMode",
+            "type": "uint8"
+          },
+          {
+            "internalType": "address",
+            "name": "customStake",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct ADDStakingTaxFactoryV2.StakingConfig",
+        "name": "s",
+        "type": "tuple"
+      }
+    ],
+    "name": "createTokenWithStaking",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "miningPool",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "creationCode",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "creatorOf",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dividendImplementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "dividendOf",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDeploymentInfo",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes2",
+        "name": "",
+        "type": "bytes2"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "creator_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "offset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "limit",
+        "type": "uint256"
+      }
+    ],
+    "name": "getStakingPools",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "result",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "implementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isCreatedToken",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "isStakingPool",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "portal",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "portalFactoryVersion",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "salt",
+        "type": "bytes32"
+      }
+    ],
+    "name": "predictToken",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "router",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stakingImplementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "stakingOf",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "stakingPoolCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "tokenAddressSuffix",
+    "outputs": [
+      {
+        "internalType": "bytes2",
+        "name": "",
+        "type": "bytes2"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "at": "2026-10-07T10:09:30.371Z",
+  "chainId": 56,
+  "results": [
+    {
+      "kind": "token",
+      "address": "0x65d282fadc0283d537001b43d8c08b69eabc1111",
+      "implementation": "0x5fde8257c86d3a955243aa436ad0057618d606ff",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    },
+    {
+      "kind": "token",
+      "address": "0x43f1c54d705ae27f8baf70a091da31d38e241111",
+      "implementation": "0x5fde8257c86d3a955243aa436ad0057618d606ff",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    },
+    {
+      "kind": "token",
+      "address": "0x5bbca07b1b51c4f30e0dae8bf7cf026d4a821111",
+      "implementation": "0xd7308a6a87bb5d4fe7bdc1fa1b150885d8408bdd",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    },
+    {
+      "kind": "token",
+      "address": "0x83a4b432e8529528491a8fcba9a7c9b4ad141111",
+      "implementation": "0x4450748235a2180b78e82ed6238f918c1acf9684",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    },
+    {
+      "kind": "token",
+      "address": "0x71be68c0bd800de27f1d48de4876215ed3c21111",
+      "implementation": "0xeb452c3cf25cda5d170f0265801a69263840b92d",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    },
+    {
+      "kind": "token",
+      "address": "0x0e5115d21cf093160fe1a01034f9e1927b1a1111",
+      "implementation": "0xeb452c3cf25cda5d170f0265801a69263840b92d",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    },
+    {
+      "kind": "token",
+      "address": "0x0262ab46b8b0a6deb63092092419192a69401111",
+      "implementation": "0xeb452c3cf25cda5d170f0265801a69263840b92d",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    },
+    {
+      "kind": "token",
+      "address": "0x1d8400b89dac70d5d9f26068d4afe38223bd1111",
+      "implementation": "0xeb452c3cf25cda5d170f0265801a69263840b92d",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    },
+    {
+      "kind": "token",
+      "address": "0x5c6d27cadf07c19214112033a0e5dfdd9f2d1111",
+      "implementation": "0xeb452c3cf25cda5d170f0265801a69263840b92d",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    },
+    {
+      "kind": "dividend",
+      "address": "0xA21282C4e532F903Dd06Cae5E7C776403e5cE261",
+      "implementation": "0xCFaC91521f319a41B358B166170cB3206B573c85",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    },
+    {
+      "kind": "dividend",
+      "address": "0xf4317407D18F3f0aF8475Cc962861654DcA65006",
+      "implementation": "0xCFaC91521f319a41B358B166170cB3206B573c85",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    },
+    {
+      "kind": "staking",
+      "address": "0xE1CE58343A14E587C9BAdec301BD4FFb5442E75B",
+      "implementation": "0x0ae9D3AA1faa6e10810d859F1302D0b9c5Ab1100",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    },
+    {
+      "kind": "staking",
+      "address": "0x8CfB7FC12f981A5C7FDd42340B85CD4B9c2ad635",
+      "implementation": "0x0ae9D3AA1faa6e10810d859F1302D0b9c5Ab1100",
+      "status": "verified",
+      "sourceVerified": true,
+      "proxyLinked": true
+    }
+  ],
+  "allVerified": true,
+  "signed": false,
+  "broadcast": false
+}

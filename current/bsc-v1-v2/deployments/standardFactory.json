@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "standardFactory",
+  "address": "0xeca7b035890d44a6b8da97d932509baaade2b71c",
+  "status": "current",
+  "deploymentFamily": "portal-v1",
+  "contractName": "contracts/portal-v1/ADDVariableFactoryV1.sol:ADDVariableFactoryV1",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/afe650a77d2e3bda.json",
+  "abi": "abi/standardFactory.json",
+  "standardInputSha256": "33bd093ac21e5dee59f10362883c0930da2d58b49116b2daf4d2237f2266a5ed",
+  "constructor": {
+    "types": [
+      "address"
+    ],
+    "args": [
+      "0x933BC9fe78c9BEAEdC5a82Bd24B5359d01E8FD7B"
+    ],
+    "encodedArguments": "000000000000000000000000933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b"
+  },
+  "creationSha256": "f5c98099db37c3189e1535d7aaac6b6e2af1734bdd112cbf71cf0a380ab27535",
+  "runtimeTemplateSha256": "7b58af9f041bbc746569fa1fdc81c7616153bdefe04d245b778d79faea8b8270",
+  "immutableReferences": {
+    "723": [
+      {
+        "length": 32,
+        "start": 473
+      },
+      {
+        "length": 32,
+        "start": 890
+      },
+      {
+        "length": 32,
+        "start": 1107
+      },
+      {
+        "length": 32,
+        "start": 1777
+      },
+      {
+        "length": 32,
+        "start": 2171
+      }
+    ],
+    "725": [
+      {
+        "length": 32,
+        "start": 1846
+      },
+      {
+        "length": 32,
+        "start": 2102
+      }
+    ]
+  },
+  "immutableValues": {
+    "723": "0x000000000000000000000000933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b",
+    "725": "0x0000000000000000000000005ac337ab6815595bd3dd924b3003ce83d694bd3d"
+  },
+  "immutableBindings": {
+    "723": {
+      "name": "portal",
+      "address": "0x933bc9fe78c9beaedc5a82bd24b5359d01e8fd7b"
+    },
+    "725": {
+      "name": "implementation",
+      "address": "0x5ac337ab6815595bd3dd924b3003ce83d694bd3d"
+    }
+  },
+  "runtimeSha256": "493b9d0eb376a742ec9ff234358950b1ed77d405156024e4a3a1989ffd746adb",
+  "runtimeCodeHash": "0x80aa4d244f8234d09d85059e75422953421fbb7305d76789b70c2ba90663138f",
+  "runtimeBytes": 2469,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:08:03.674Z",
+    "explorer": "https://bscscan.com/address/0xeca7b035890d44a6b8da97d932509baaade2b71c#code",
+    "evidence": "docs/verification/bsc-core-20261007.json"
+  },
+  "chainObservation": {
+    "at": "2026-10-07T05:20:34.559Z",
+    "blockNumber": 126194967,
+    "scope": "Full runtime bytes matched the recorded immutable bindings; no transactions"
+  }
+}

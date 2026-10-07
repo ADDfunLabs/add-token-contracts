@@ -1,7 +1,7 @@
 {
   "chainId": 56,
   "address": "0x68D18a58e97C20c849d7E5cc8d68bcb3c61a8242",
-  "status": "current",
+  "status": "historical",
   "contractName": "contracts/TokenSale.sol:TokenSale",
   "compilerVersion": "v0.8.20+commit.a1b79de6",
   "constructorArguments": "",
@@ -81,5 +81,6 @@
       "path": "contracts/openzeppelin/ERC20.sol",
       "sha256": "9bc335da03998c483d67334868cbf76ef58933c8fa64a007ddfc97d87247e144"
     }
-  ]
+  ],
+  "publicationStatusAtArchive": "current"
 }

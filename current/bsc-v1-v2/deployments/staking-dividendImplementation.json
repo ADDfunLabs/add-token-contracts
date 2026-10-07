@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "staking.dividendImplementation",
+  "address": "0xcfac91521f319a41b358b166170cb3206b573c85",
+  "status": "current",
+  "deploymentFamily": "staking-v2",
+  "contractName": "contracts/tax-v1/ADDClaimDividendV1.sol:ADDClaimDividendV1",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/9a591fd9bd60ebf0.json",
+  "abi": "abi/staking-dividendImplementation.json",
+  "standardInputSha256": "febdc6b25de3647915920be95719daebfe7a5328fd1eff2fcb290a23a2dbbe51",
+  "constructor": {
+    "types": [],
+    "args": [],
+    "encodedArguments": ""
+  },
+  "creationSha256": "6b994e9422d865d169c1b552b32fe9577ede10f14be28abafba9e04c6e9a1d7b",
+  "runtimeTemplateSha256": "8ece0ccf18da7e36fd29ecd4018d03364ef0a03742614cbf1177ea5697cfdd73",
+  "immutableReferences": {
+    "561": [
+      {
+        "length": 32,
+        "start": 492
+      },
+      {
+        "length": 32,
+        "start": 1764
+      }
+    ]
+  },
+  "immutableValues": {
+    "561": "0x00000000000000000000000051f37e77138318e2596614d079f6bdea49d2ffbb"
+  },
+  "immutableBindings": {
+    "561": {
+      "name": "initializationFactory",
+      "address": "0x51f37e77138318e2596614d079f6bdea49d2ffbb"
+    }
+  },
+  "runtimeSha256": "d9e36186b582c78177078c490c3e29c32449ff739087eb08eba6c13465cbb874",
+  "runtimeCodeHash": "0xaebb8a0862ab80f748b91447f9fea4c9fd756755762492f6b87134e0f1c27b85",
+  "runtimeBytes": 5399,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:08:09.571Z",
+    "explorer": "https://bscscan.com/address/0xcfac91521f319a41b358b166170cb3206b573c85#code",
+    "evidence": "docs/verification/bsc-core-20261007.json"
+  },
+  "chainObservation": {
+    "at": "2026-10-07T05:20:34.559Z",
+    "blockNumber": 126194967,
+    "scope": "Full runtime bytes matched the recorded immutable bindings; no transactions"
+  }
+}

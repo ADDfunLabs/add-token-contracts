@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 2,
+  "chainId": 56,
+  "role": "staking.poolDeployer",
+  "address": "0xcb81518be6e16c4c78b740e1c0032c0fe28fc441",
+  "status": "current",
+  "deploymentFamily": "staking-v2",
+  "contractName": "contracts/staking-v2/ADDStakingPoolDeployerV2.sol:ADDStakingPoolDeployerV2",
+  "compilerVersion": "v0.8.20+commit.a1b79de6",
+  "input": "compiler-inputs/5e95756c675bc939.json",
+  "abi": "abi/staking-poolDeployer.json",
+  "standardInputSha256": "500677eab788f85b5f43aada1d10a521b8e9ed728ab289b210bb92cd6909c399",
+  "constructor": {
+    "types": [],
+    "args": [],
+    "encodedArguments": ""
+  },
+  "creationSha256": "575777ff53e897cb987b1494538b4562d6e79c6733d2381a52342be8f8feec86",
+  "runtimeTemplateSha256": "07dda40da5eeadbd6aef799397c098530667459ae3d90beb5eb0e0a713959a98",
+  "immutableReferences": {},
+  "immutableValues": {},
+  "immutableBindings": {},
+  "runtimeSha256": "07dda40da5eeadbd6aef799397c098530667459ae3d90beb5eb0e0a713959a98",
+  "runtimeCodeHash": "0x84d88f7e51372a04e427b68abf6a191376f1652b9bf4c7c4978b46e67ec863bf",
+  "runtimeBytes": 22302,
+  "sourceVerification": {
+    "status": "verified",
+    "checkedAt": "2026-10-07T10:08:32.224Z",
+    "explorer": "https://bscscan.com/address/0xcb81518be6e16c4c78b740e1c0032c0fe28fc441#code",
+    "evidence": "docs/verification/bsc-core-20261007.json"
+  },
+  "chainObservation": {
+    "at": "2026-10-07T05:20:34.559Z",
+    "blockNumber": 126194967,
+    "scope": "Full runtime bytes matched the recorded immutable bindings; no transactions"
+  }
+}
