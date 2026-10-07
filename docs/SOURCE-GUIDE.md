@@ -19,6 +19,10 @@ Read imports and inherited contracts together. The trade module runs only throug
 
 审阅时需要一并阅读导入和继承的源码。交易模块只通过所绑定的 Portal 运行，单独部署或调用某个辅助合约不等于完整平台。
 
+The deployed BSC V1 ledger has `DEFAULT_TARGET_BNB = 4 ether` as a constant. It has no default-target setter. The owner manages the custom-target entry switch, and creators can select permitted custom targets while it is enabled. Default setters belonging to historical shared-Portal deployments or ETH development do not apply to this BSC V1 publication.
+
+已部署 BSC V1 账本的 `DEFAULT_TARGET_BNB = 4 ether` 是常量，没有修改默认目标的函数。业主管理自定义目标入口开关，开启时由创建者选择规则允许的自定义目标。历史共用 Portal 或 ETH 开发版里的默认目标修改函数，不适用于本次 BSC V1 公开包。
+
 ## Token, dividend and mining instances / 代币、分红与矿池实例
 
 1. Open the instance address on BscScan's **Contract** tab. For ADD's EIP-1167 instances, inspect the implementation address and the explorer's implementation-source link.

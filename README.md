@@ -22,7 +22,7 @@ The publication checks recorded verified BscScan source for all 17 protocol role
 
 ## Launch and tax rules
 
-The Portal prices a launch from the tokens it actually receives: half is offered for sale and half is reserved for V2 liquidity. Current BSC default is **4 BNB**. Custom targets are at least **1 BNB** when that entry is enabled. Changing the default affects future launches, not existing launch targets. BNB, USDT and supported custom fundraising assets are supported; buyers pay BNB and the Portal settles into the configured asset.
+The Portal prices a launch from the tokens it actually receives: half is offered for sale and half is reserved for V2 liquidity. The ordinary BSC V1 target is a fixed **4 BNB** constant; this deployed version has no default-target setter. The owner can enable or disable the custom-target entry, where creators may choose a target of at least **1 BNB**. Those switches do not reprice admitted launches. BNB, USDT and supported custom fundraising assets are supported; buyers pay BNB and the Portal settles into the configured asset.
 
 Internal buys and sells charge the platform's **1% trading fee**. When the unsold allocation becomes strictly less than 1% of the admitted inventory, graduation uses the actual reserve and liquidity allocation. Excess payment on the final purchase is refunded to the buyer. Graduation and tax-added LP are sent to the dead address.
 
@@ -56,7 +56,7 @@ Both commands are offline and never connect a wallet or send a transaction. The 
 
 This release includes ADD's production implementations and their dependencies. It excludes the website, backend, private deployment tools/configuration, credentials, undeployed external mechanisms and ETH development. [PancakeSwap V2's router](https://bscscan.com/address/0x10ED43C718714eb63d5aA57B78B54704E256024E#code) is an external protocol dependency, not ADD-owned code.
 
-The Portal is immutable but has owner management: factory admission, entry switches, future defaults, fee recipient, recovery choices, surplus-only withdrawals and two-step ownership transfer. Protected launch inventories and reserves cannot be swept. Fixed token/pool clones are not upgradeable proxies. Review [SECURITY.md](SECURITY.md) and the surrounding contracts; source/bytecode verification is not an independent security audit or a guarantee for arbitrary ERC20 assets.
+The Portal is immutable but has owner management: factory admission, entry switches, fee recipient, recovery choices, surplus-only withdrawals and two-step ownership transfer. The owner cannot change the ordinary 4 BNB target or reprice admitted launches. Protected launch inventories and reserves cannot be swept. Fixed token/pool clones are not upgradeable proxies. Review [SECURITY.md](SECURITY.md) and the surrounding contracts; source/bytecode verification is not an independent security audit or a guarantee for arbitrary ERC20 assets.
 
 MIT, with source SPDX identifiers and [third-party notices](THIRD_PARTY_NOTICES.md) preserved. The local `openzeppelin/` utilities are not represented as upstream audited OpenZeppelin releases. The license does not grant ADD brand rights or endorsement. This repository is a source archive, not a one-click deployment kit.
 

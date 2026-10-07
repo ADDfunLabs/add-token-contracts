@@ -7,6 +7,7 @@
 - Previous five token implementation bundles preserved as historical snapshots. No change to deployed contracts or existing token balances.
 - Verifier checks full runtime keccak256 and supports a release gate for recorded BscScan verification status.
 - Public read-only verification summaries cover the protocol roles and website token, dividend and mining-pool clone associations; the source guide maps instances to current or historical implementations.
+- Documentation correction: deployed BSC V1 uses a fixed 4 BNB ordinary target and has no default-target setter. Its owner can switch custom-target admission, not change that constant. Historical/ETH default-setting permissions do not apply; no contract source, address or archive version changed.
 
 ## source-v1.0.0 — 2026-09-16
 
